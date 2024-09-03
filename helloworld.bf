@@ -3,7 +3,7 @@
 
 >+++++++++[<++++++++>-]<. //Multiply 9 * 8 to get 72 aka H
 >+++++++[<++++>-]<+. //Now for 7 times add 4 to get 100 then add 1 more to get 101 for e
-+++++++. //? //Add 7 more for 108 for l
++++++++. //Add 7 more for 108 for l
 . //print l again
 +++. //add 3 more for o
 [-] //now we reset back to 0 just because its easier 

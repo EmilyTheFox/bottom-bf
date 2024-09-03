@@ -34,9 +34,8 @@
 
     << // Move back to our latest input at (0)(5){84}(0)(0)
     [ // And if it isnt a zero aka enter
-        +++++++++++++ // Add 13 again 
-        . // Print our input
-        >++++++++++.[-] // Print a line feed
+        +++++++++++++ // Add 13 again
+        >
     ]
     <
     [<]>- // Move back to our 2nd cell with our allowed inputs and subtract 1
@@ -46,3 +45,5 @@
 [
     .> // print it and move right
 ]
+
+// Now its time to bottom encode these characters! oh boi

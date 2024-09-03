@@ -1,0 +1,19 @@
+{
+  "name": "bottomfuck",
+  "version": "1.0.0",
+  "description": "Bottom encoder & decoder in brainfuck. Yep, I was bored.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilyTheFox/bottom-bf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmilyTheFox/bottom-bf/issues"
+  },
+  "homepage": "https://github.com/EmilyTheFox/bottom-bf#readme"
+}
