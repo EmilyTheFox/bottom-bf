@@ -9,10 +9,12 @@ Simply have python installed. This should work in Python 3. Of course you can us
 ## How to use
 
 In your commandline run `py brainfuck.py encode.bf` 
-or
-`py brainfuck.py decode.bf`
+or `py brainfuck.py decode.bf`
 
-and then give your input string
+and then give your input string one character at a time
+the max length for inputs is set up on line 1 of these files
+you can stop your input early by pressing enter aka ascii code 13
+I couldnt be bothered making it check for other exits like code 10 for line feed
 
 ## Credits 
 

@@ -40,12 +40,18 @@ def evaluate(code):
     if command == "]" and cells[cellptr] != 0: codeptr = bracemap[codeptr]
     if command == ".": sys.stdout.write(chr(cells[cellptr]))
     if command == ",": cells[cellptr] = ord(getch.getch())
+
+    # Added ? for debugging, it just prints the cells and position of the pointer
+    if command == "?":
       
+      print(f'\nCurrently at cell {cellptr} which has value {cells[cellptr]}')
+      print(str(cells))
+
     codeptr += 1
 
 
 def cleanup(code):
-  return ''.join(filter(lambda x: x in ['.', ',', '[', ']', '<', '>', '+', '-'], code))
+  return ''.join(filter(lambda x: x in ['.', ',', '[', ']', '<', '>', '+', '-', '?'], code)) # ? for debugging
 
 
 def buildbracemap(code):

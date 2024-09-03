@@ -1,1 +1,24 @@
 Just a file of notes for how I want to make this shit functional
+
+NOTE: This file is my rubber ducky, therefor you reading this are now my rubber ducky (youre such a good ducky <3)
+So it'll prob say a lot of things that are wrong, or not fully finish steps
+I'll still upload this file to github just for completeness of it all
+
+Encode notes
+
+Steps
+1. Set a maximum length of how long our input string may be, lets say 100 for now
+To do this we should have a memory address with 100 in it and be able to get back to this adress
+So step 1 is having memory like [0][100], we can move back to our length adress with `[<]>` 
+(move till it hits 0, then move right once)
+To get to 100 we can do ++++++++++[<++++++++++>-]< (10 * 10)
+
+2. Have a loop that moves to the next 0 in memory and reads an input there, then move back to our allowed input
+and subtract 1 so we end up with [0][99][input1] -> [0][98][input1][input2] etc.
+We will need a way to exit out of this early if the input is less than 100 long, probably by reading an Enter
+
+3. now our data should look something like this for the input Bottom Encoder [0, 0, 66, 111, 116, 116, 111, 109, 32, 69, 110, 99, 111, 100, 101, 114, 0, 0, 0]
+The 2nd cell now no longer serves a purpose but oh well, we could move everything with a little loop like [-<+>] which subtracts 1, moves left and add 1, moves right and repeats
+if we nest that in another loop to do that for every cell we can reorganize our memory but theres no need so whatever
+
+4. Oh god wtf do I do now-
