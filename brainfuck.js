@@ -105,3 +105,15 @@ function runBrainfuck(brainfuckArray) {
 }
 
 runBrainfuck(brainfuckCode);
+
+
+// this is very shitty code but I just wanna have minimized versions of the brainfuckery to post on discord
+if (!brainfuckFileLocation.startsWith('minimized')) {
+    let minimizedFileName = `${brainfuckFileLocation.slice(0, -3)}.min.bf`;
+    let minimizedBrainfuck = brainfuckCode.join('');
+
+    if (!fs.existsSync('minimized')) {
+        fs.mkdirSync('minimized');
+    }
+    fs.writeFileSync(`minimized/${minimizedFileName}`, minimizedBrainfuck);
+}

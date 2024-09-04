@@ -223,3 +223,6 @@
     
     <+>[<-]<[-]>> // if we are with 0 remaining move to the next value
 ]
+
+// Finish with a linebreak
+[-]++++++++++.[-]
