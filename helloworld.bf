@@ -1,5 +1,5 @@
 //How Hello World in Brainfuck works
-//(I didn't actually write this hello world I'm just explaining it)
+// (I didn't actually write this hello world I'm just explaining it for my own sake of understanding wtf is going on)
 
 >+++++++++[<++++++++>-]<. //Multiply 9 * 8 to get 72 aka H
 >+++++++[<++++>-]<+. //Now for 7 times add 4 to get 100 then add 1 more to get 101 for e

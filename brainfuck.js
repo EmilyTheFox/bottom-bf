@@ -5,9 +5,14 @@ const { exit } = require('process');
 const MAX_CELL_COUNT = 30000;
 const MAX_CELL_VALUE = 255;
 
-if (process.argv.length < 4) {
+if (process.argv.length < 3) {
     console.log('No brainfuck file specified');
-    console.log(`Usage: node brainfuck.js encode.bf Your text to encode`);
+    console.log(`Usage: node brainfuck.js encode.bf "Your text to encode"`);
+    exit(1);
+}
+if (process.argv.length < 4) {
+    console.log('No input string specified');
+    console.log(`Usage: node brainfuck.js encode.bf "Your text to encode"`);
     exit(1);
 }
 
